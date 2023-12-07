@@ -11,8 +11,8 @@ Program pozwala na dostrojenie różnych parametrów, takich jak lista miast ze 
 Dodatkowo, program zapewnia wizualizację wyników poprzez wykresy, które prezentują średnie, maksymalne i minimalne wartości przystosowania dla kolejnych epok populacji. Poza wykresami wizualizowane są najlepsze oraz najgorsze znalezione rozwiązanie w postaci mapy.
 
 ## DEMO
-Poniżej prezentuję najlepszy uzyskany wynik działania algorytmu przy zastosowania parametrów liczba epok 2000, rozmiar populacji 100, prawdopodobieństwo mutacji 0.2%:
+Poniżej prezentuję najlepszy uzyskany wynik działania algorytmu przy zastosowania parametrów liczba epok 100, rozmiar populacji 50, prawdopodobieństwo mutacji 0.2%:
 
-![6_droga](https://github.com/MichalZdanuk/TravellingSalesmanProblem/assets/76063659/1636fae7-4265-4dd9-a9ca-4c5c29df7b9f)
+![6_droga](https://github.com/MichalZdanuk/TravellingSalesmanProblem/assets/76063659/f6253c89-8f0e-4ce3-86f3-0548a6c5f7b1)
 
-![6_wykres](https://github.com/MichalZdanuk/TravellingSalesmanProblem/assets/76063659/54d9f03a-62a0-4386-a5fd-9aa3aeff3a00)
+![6_wykres](https://github.com/MichalZdanuk/TravellingSalesmanProblem/assets/76063659/0ac64936-9150-4393-ad73-66de42032e07)
