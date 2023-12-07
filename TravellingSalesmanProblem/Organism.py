@@ -7,9 +7,9 @@ class Organism:
     def calculate_road_length(self):
         total_distance = 0
 
-        for i in range(len(self.cities) - 1):
+        for i in range(len(self.cities)):
             current_city = self.cities[i]
-            next_city = self.cities[i + 1]
+            next_city = self.cities[(i + 1) % len(self.cities)]
 
             distance = ((next_city[1] - current_city[1])**2 + (next_city[2] - current_city[2])**2)**0.5
             total_distance += distance

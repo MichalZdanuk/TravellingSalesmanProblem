@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 
 cities_list = [
     ('A', 2, 2), ('B', 9, 8), ('C', 6, 6), ('D', 1, 8), ('E', 3, 7),
-    ('F', 5, 7), ('G', 4, 3), ('H', 10, 5), ('I', 7, 4), ('J', 8, 1),
-    ('K', 4, 9), ('L', 8, 9), ('M', 5, 2), ('N', 4, 6), ('O', 10, 4)
-    #('P', 5, 7), ('R', 4, 3), ('S', 10, 5), ('T', 7, 4), ('U', 8, 1),
+    ('F', 5, 7), ('G', 4, 3), ('H', 10, 5), ('I', 7, 4), ('J', 8, 1)
 ]
 
 def plot_map(cities, title, position):
@@ -20,9 +18,9 @@ def plot_map(cities, title, position):
         plt.text(city[1], city[2], city[0])
 
     # Connect cities in order
-    for i in range(len(cities) - 1):
+    for i in range(len(cities)):
         current_city = cities[i]
-        next_city = cities[i + 1]
+        next_city = cities[(i + 1) % len(cities)]
         plt.plot([current_city[1], next_city[1]], [current_city[2], next_city[2]], 'b-')
 
     plt.xlabel('X-axis')
@@ -30,9 +28,9 @@ def plot_map(cities, title, position):
     plt.grid(True)
 
 
-number_of_epochs = 20000
-mutation_probability = 0.01
-population_size = 50
+number_of_epochs = 100
+mutation_probability = 0.02
+population_size = 16
 
 tsp_instance = GeneticAlgorithm(cities_list, number_of_epochs, mutation_probability, population_size)
 tsp_instance.run_evolution()
